@@ -9,6 +9,7 @@ if grep -q Raspberry /proc/cpuinfo; then
     echo -e "\033[1;42mRunning on a Raspberry Pi\033[0m"
 else
     echo -e "\033[47;31mNot running on a Raspberry Pi. Use at your own risk!\033[0m"
+    SKIP_UART=1
 fi
 
 # Number of cores when running make
