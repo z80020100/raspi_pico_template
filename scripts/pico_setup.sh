@@ -4,9 +4,9 @@
 set -e
 
 if grep -q Raspberry /proc/cpuinfo; then
-    echo "Running on a Raspberry Pi"
+    echo -e "\033[1;42mRunning on a Raspberry Pi\033[0m"
 else
-    echo "Not running on a Raspberry Pi. Use at your own risk!"
+    echo -e "\033[47;31mNot running on a Raspberry Pi. Use at your own risk!\033[0m"
 fi
 
 # Number of cores when running make
