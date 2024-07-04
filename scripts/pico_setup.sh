@@ -1,5 +1,10 @@
 #!/bin/bash
 
+SCRIPT_PATH=$(
+    cd "$(dirname "$0")"
+    pwd
+)
+
 # Exit on error
 set -e
 
@@ -16,7 +21,7 @@ fi
 JNUM=4
 
 # Where will the output go?
-OUTDIR="$(pwd)/pico"
+OUTDIR="$SCRIPT_PATH/../sdk"
 
 # Install dependencies
 GIT_DEPS="git"
