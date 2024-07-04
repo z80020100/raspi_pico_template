@@ -2,7 +2,7 @@
 
 ## Environment Setup
 
-- `source scripts/pico_setup.sh`
+- `source scripts/pico_setup_debian.sh`
 
 ## References
 
