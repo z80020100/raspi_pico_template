@@ -5,6 +5,8 @@ SCRIPT_PATH=$(
     pwd
 )
 
+SDK_PATH_VARS=$SCRIPT_PATH/sdk_path.sh
+
 # Exit on error
 set -e
 
@@ -71,16 +73,13 @@ do
 
         # Define PICO_SDK_PATH in ~/.bashrc
         VARNAME="PICO_${REPO^^}_PATH"
-        echo "Adding $VARNAME to ~/.bashrc"
-        echo "export $VARNAME=$DEST" >> ~/.bashrc
+        # echo "Adding $VARNAME to ~/.bashrc"
+        # echo "export $VARNAME=$DEST" >> ~/.bashrc
         export ${VARNAME}=$DEST
     fi
 done
 
 cd $OUTDIR
-
-# Pick up new variables we just defined
-source ~/.bashrc
 
 # Build a couple of examples
 cd "$OUTDIR/pico-examples"
