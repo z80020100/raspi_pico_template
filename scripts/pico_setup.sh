@@ -83,7 +83,7 @@ cd $OUTDIR
 
 # Build a couple of examples
 cd "$OUTDIR/pico-examples"
-mkdir build
+mkdir -p build
 cd build
 cmake ../ -DCMAKE_BUILD_TYPE=Debug
 
