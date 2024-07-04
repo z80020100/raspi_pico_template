@@ -3,6 +3,8 @@
 # Exit on error
 set -e
 
+SKIP_VSCODE=1
+
 if grep -q Raspberry /proc/cpuinfo; then
     echo -e "\033[1;42mRunning on a Raspberry Pi\033[0m"
 else
