@@ -2,7 +2,8 @@
 
 ## Environment Setup
 
-- `source scripts/pico_setup_debian.sh`
+- `./scripts/pico_setup_debian.sh`
+- `source scripts/sdk_path.sh`
 
 ## References
 
